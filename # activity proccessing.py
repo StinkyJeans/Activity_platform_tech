@@ -23,3 +23,9 @@ while processes:
     run_process(current_process)
     halt_process(current_process)
     terminate_process(current_process)
+    
+    
+
+
+print("All processes are done!")
+
