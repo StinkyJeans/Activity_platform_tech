@@ -11,8 +11,8 @@ def run_process(process_name):
 
 # Function to simulate a process termination
 
-def halt_process(process_name):
-    print(f"{process_name} paused")
+# def halt_process(process_name):
+#     print(f"{process_name} paused")
     
 def terminate_process(process_name):
     print(f"{process_name} done")
@@ -21,7 +21,7 @@ def terminate_process(process_name):
 while processes:
     current_process = processes.pop(0)
     run_process(current_process)
-    halt_process(current_process)
+    # halt_process(current_process)
     terminate_process(current_process)
     
     
