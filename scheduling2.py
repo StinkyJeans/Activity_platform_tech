@@ -4,7 +4,7 @@ import time
 # Function to simulate process execution
 def run_process(process_name):
     for i in range(4):
-        print(f"{process_name} -> running state")
+        print(f"{process_name} running state")
         time.sleep(1)
         
         if process_name == "P0" and i == 2:
