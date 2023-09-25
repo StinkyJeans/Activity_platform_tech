@@ -8,24 +8,24 @@ def run_process(process_name):
         time.sleep(1)
         
         if process_name == "P0" and i == 2:
-            print("P0 -> interrupted")
+            print("P0  halted")
             time.sleep(1)
-            print("P0 -> waiting state")
+            print("P0 waiting state")
         elif process_name == "P2" and i == 1:
-            print("P2 -> interrupted")
+            print("P2 halted")
             time.sleep(1)
-            print("P2 -> waiting state")
+            print("P2 waiting state")
         elif process_name == "P1" and i == 3:
-            print("P1 -> Done")
+            print("P1 finished")
             return
         elif process_name == "P0" and i == 3:
-            print("P0 -> Done")
+            print("P0 finished")
             return
         elif process_name == "P2" and i == 3:
-            print("P2 -> Done")
+            print("P2 fisnihed")
             return
         else:
-            print(f"{process_name} -> waiting state")
+            print(f"{process_name} waiting state")
 
 # Create thread objects for each process
 p0_thread = threading.Thread(target=run_process, args=("P0",))
